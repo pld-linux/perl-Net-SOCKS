@@ -1,0 +1,8 @@
+--- SOCKS-0.03/example~	Tue May 19 13:49:07 1998
++++ SOCKS-0.03/example	Sun Oct 17 13:47:13 1999
+@@ -1,4 +1,4 @@
+-#!/usr/local/bin/perl -w
++#!/usr/bin/perl -w
+ 
+ use strict;
+ 
