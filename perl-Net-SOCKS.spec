@@ -7,7 +7,7 @@ Summary:	Net::SOCKS perl module
 Summary(pl):	Modu³ perla Net::SOCKS
 Name:		perl-Net-SOCKS
 Version:	0.03
-Release:	8
+Release:	9
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
