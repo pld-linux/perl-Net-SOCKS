@@ -15,7 +15,7 @@ Source0:	http://www.cpan.org/modules/by-module/Net/SOCKS-%{version}.tar.gz
 # Source0-md5:	81f63a1fb252d211a083909fbdc1611b
 Patch0:		%{name}-paths.patch
 BuildRequires:	rpm-perlprov >= 4.1-13
-BuildRequires:	perl-devel >= 5.6
+BuildRequires:	perl-devel >= 1:5.8.0
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
