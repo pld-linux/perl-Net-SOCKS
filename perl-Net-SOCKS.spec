@@ -1,10 +1,15 @@
+#
+# Conditional build:
+%bcond_without	tests	# do not perform "make test"
+#
 %include	/usr/lib/rpm/macros.perl
 Summary:	Net::SOCKS perl module
 Summary(pl):	Modu³ perla Net::SOCKS
 Name:		perl-Net-SOCKS
 Version:	0.03
 Release:	8
-License:	GPL
+# same as perl
+License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/Net/SOCKS-%{version}.tar.gz
 # Source0-md5:	81f63a1fb252d211a083909fbdc1611b
@@ -29,11 +34,14 @@ Net::SOCKS - klient SOCKS.
 	INSTALLDIRS=vendor
 %{__make}
 
+%{?with_tests:%{__make} test}
+
 %install
 rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT%{_examplesdir}/%{name}-%{version}
 
-%{__make} install DESTDIR=$RPM_BUILD_ROOT
+%{__make} install \
+	DESTDIR=$RPM_BUILD_ROOT
 install example $RPM_BUILD_ROOT%{_examplesdir}/%{name}-%{version}
 
 %clean
