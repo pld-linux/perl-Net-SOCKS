@@ -29,17 +29,19 @@ perl Makefile.PL
 
 %install
 rm -rf $RPM_BUILD_ROOT
+install -d $RPM_BUILD_ROOT%{_examplesdir}/%{name}-%{version}
 
 %{__make} install DESTDIR=$RPM_BUILD_ROOT
-
-gzip -9nf Changes README TODO
+install example $RPM_BUILD_ROOT%{_examplesdir}/%{name}-%{version}
 
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc *.gz example
+%doc Changes README TODO example
 %{perl_sitelib}/Net/SOCKS.pm
 %{perl_sitelib}/auto/Net/SOCKS
 %{_mandir}/man3/*
+%dir %{_examplesdir}/%{name}-%{version}
+%attr(755,root,root) %{_examplesdir}/%{name}-%{version}/*
