@@ -7,6 +7,7 @@ Release:	8
 License:	GPL
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/Net/SOCKS-%{version}.tar.gz
+# Source0-md5:	81f63a1fb252d211a083909fbdc1611b
 Patch0:		%{name}-paths.patch
 BuildRequires:	rpm-perlprov >= 4.1-13
 BuildRequires:	perl-devel >= 5.6
