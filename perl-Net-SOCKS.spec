@@ -1,4 +1,4 @@
-%define		perl_sitelib	%(eval "`perl -V:installsitelib`"; echo $installsitelib)
+%include	/usr/lib/rpm/macros.perl
 Summary:	Net-SOCKS perl module
 Summary(pl):	Modu³ perla Net-SOCKS
 Name:		perl-Net-SOCKS
@@ -9,7 +9,8 @@ Group:		Development/Languages/Perl
 Group(pl):	Programowanie/Jêzyki/Perl
 Source:		ftp://ftp.perl.org/pub/CPAN/modules/by-module/Net/SOCKS-%{version}.tar.gz
 Patch:		perl-Net-SOCKS-paths.patch
-BuildRequires:	perl >= 5.005_03-10
+BuildRequires:	rpm-perlprov >= 3.0.3-16
+BuildRequires:	perl >= 5.005_03-14
 %requires_eq	perl
 Requires:	%{perl_sitearch}
 BuildRoot:	/tmp/%{name}-%{version}-root
