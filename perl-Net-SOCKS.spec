@@ -27,7 +27,7 @@ Net::SOCKS - klient SOCKS.
 
 %prep
 %setup -q -n SOCKS-%{version}
-%patch -p1
+%patch0 -p1
 
 %build
 %{__perl} Makefile.PL \
