@@ -4,7 +4,7 @@
 #
 %include	/usr/lib/rpm/macros.perl
 Summary:	Net::SOCKS perl module
-Summary(pl):	Modu≥ perla Net::SOCKS
+Summary(pl.UTF-8):   Modu≈Ç perla Net::SOCKS
 Name:		perl-Net-SOCKS
 Version:	0.03
 Release:	9
@@ -22,7 +22,7 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 Net::SOCKS - a SOCKS client.
 
-%description -l pl
+%description -l pl.UTF-8
 Net::SOCKS - klient SOCKS.
 
 %prep
