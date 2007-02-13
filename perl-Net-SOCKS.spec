@@ -4,7 +4,7 @@
 #
 %include	/usr/lib/rpm/macros.perl
 Summary:	Net::SOCKS perl module
-Summary(pl.UTF-8):   Moduł perla Net::SOCKS
+Summary(pl.UTF-8):	Moduł perla Net::SOCKS
 Name:		perl-Net-SOCKS
 Version:	0.03
 Release:	9
