@@ -4,7 +4,6 @@
 
 %define		pdir	Net
 %define		pnam	SOCKS
-%include	/usr/lib/rpm/macros.perl
 Summary:	Net::SOCKS perl module
 Summary(pl.UTF-8):	Moduł perla Net::SOCKS
 Name:		perl-Net-SOCKS
